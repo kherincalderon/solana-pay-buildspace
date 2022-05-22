@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import CreateProduct from "../components/CreateProduct";
 import Product from "../components/Product";
 import HeadComponent from '../components/Head';
 
@@ -12,6 +13,8 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const App = () => {
   // This will fetch the users' public key (wallet address) from any wallet we support
   const { publicKey } = useWallet();
+  const isOwner = ( publicKey ? publicKey.toString() === process.env.NEXT_PUBLIC_OWNER_PUBLIC_KEY : false );
+  const [creating, setCreating] = useState(false);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -48,11 +51,17 @@ const App = () => {
       <HeadComponent/>
       <div className="container">
         <header className="header-container">
-          <p className="header">Welcome to Retr⚽️Football Club®</p>
-          <p className="sub-text">The only legendary t-shirts store that accepts Solana Pay</p>
+          <p className="header">Welcome to VintageFootball Club®</p>
+          <p className="sub-text">A legendary collectible t-shirt store that works with Solana Pay</p>
+          {isOwner && (
+            <button className="create-product-button" onClick={() => setCreating(!creating)}>
+              {creating ? "Close" : "Create Product"}
+            </button>
+          )}
         </header>
 
         <main>
+          {creating && <CreateProduct />}
           {publicKey ? renderItemBuyContainer() : renderNotConnectedContainer()}
         </main>
 

@@ -1,11 +1,29 @@
 [
-    {
-      "id": 1,
-      "name": "Retro Italy T-shirt (1982 World Cup)",
-      "price": "75",
-      "description": "Brand: Copa Classic | Material: 50% Cotton - 50% Polyester",
-      "image_url": "https://gateway.pinata.cloud/ipfs/QmZDMAeE3Dx6T3rGSQaRRtxdtMySS4ZAQvPLE4DqVgN6VB",
-      "filename": "italy_1982.zip",
-      "hash": "QmUKiZRF7QwzsAeAPPKEke8Y3Ke3TpfFKE5f2JNLTRv1Pt"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Italy Champs Retro T-shirt (1982 World Cup)",
+    "price": "79.95",
+    "description": "ULTRA RARE | #777",
+    "image_url": "https://gateway.pinata.cloud/ipfs/QmZDMAeE3Dx6T3rGSQaRRtxdtMySS4ZAQvPLE4DqVgN6VB",
+    "filename": "italy_1982.zip",
+    "hash": "QmUKiZRF7QwzsAeAPPKEke8Y3Ke3TpfFKE5f2JNLTRv1Pt"
+  },
+  {
+    "id": 2,
+    "name": "Netherlands Retro T-shirt (World Cup 1979)",
+    "price": "59.95",
+    "description": "CLASSIC | #241",
+    "image_url": "https://gateway.pinata.cloud/ipfs/QmeF3p9FWSNwEbyC1NF62aTxPQ2iptLBu1ZU1A729244Bc",
+    "filename": "netherlands_1978.zip",
+    "hash": "QmUzrZpTr9PZXvhgrXSocfqBZjj8gEYyXqAPgYj4SjMDt5"
+  },
+  {
+    "id": 3,
+    "name": "Belgium (Red Devils) 1960s Retro T-Shirt",
+    "price": "89.95",
+    "image_url": "https://gateway.pinata.cloud/ipfs/QmcBjACMEA2RhHtkPFns2xw3pWrXFWVpUE8MAwhQ3evNGt",
+    "description": "RARE | #912",
+    "filename": "belgium_60s.zip",
+    "hash": "QmNSRwUXJa7uKzr7ShGXT28jGjCJ9TGmMaV7Aub7uPLtTt"
+  }
+]
